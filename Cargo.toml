@@ -1,6 +1,20 @@
-[package]
-name = "gewr"
-version = "0.1.0"
-edition = "2024"
+[workspace]
+resolver = "2"
+members = [
+  "crates/engine_core",
+  "crates/ecs",
+  "crates/math",
+  "crates/render",
+  "crates/assets",
+  "crates/input",
+  "crates/audio",
+  "crates/platform",
+  "crates/app",
+]
 
-[dependencies]
+[workspace.package]
+edition = "2024"
+version = "0.1.0"
+
+[workspace.dependencies]
+# shared deps go here
